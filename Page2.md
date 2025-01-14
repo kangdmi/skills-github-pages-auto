@@ -1,2 +1,2 @@
 This is test file to add page 2
-
+[HOME](https://kangdmi.github.io/skills-github-pages/)
