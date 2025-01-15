@@ -14,4 +14,4 @@ Following pages added for practise
 
 [Benefits](Page3.md)
 
-[Best Practices](https://kangdmi.github.io/skills-github-pages/Page4.md)
+[Best Practices](Page4.md)
