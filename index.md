@@ -7,7 +7,7 @@ This is my assignment to build multipage web site on github.
 
 It has to be mininmum five pages.
 
-:-: Home Page (Index) is page 1 :-:
+<center> Home Page (Index) is page 1</center>
 
 Page 2 added and linked below 
 
