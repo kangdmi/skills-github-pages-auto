@@ -1,4 +1,4 @@
-## Benfits of DevSecOps
+## Benefits of DevSecOps
 
 1. Reduces the risk of releasing code with security vulnerabilities 
 
