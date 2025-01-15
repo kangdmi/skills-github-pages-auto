@@ -15,3 +15,5 @@ Following pages added for practise
 [Introduction](Page2.md)
 
 [Benefits](Page3.md)
+
+[Phases of DevSecOps](https://kangdmi.github.io/skills-github-pages/Page4.md)
