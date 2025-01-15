@@ -14,4 +14,4 @@ Page 2 added and linked below
 
 [Introduction](Page2.md)
 
-
+[Benefits](Page3.md)
