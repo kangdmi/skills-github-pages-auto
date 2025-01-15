@@ -2,4 +2,4 @@
 
 
 
-![Image](ttps://kangdmi.github.io/skills-github-pages/logoDevSecOps.png=50x20)
+![Image](https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png)
