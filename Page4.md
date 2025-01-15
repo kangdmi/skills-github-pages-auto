@@ -3,4 +3,4 @@
 Testing Image
 
 
-![Image](https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png)
+![Image](logoDevSecOps.png)
