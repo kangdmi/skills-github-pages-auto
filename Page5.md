@@ -18,3 +18,5 @@ DevSecOps is as much about culture change as process and tools. Here are some be
 7. Evaluate and improve
 
 [Home](https://kangdmi.github.io/skills-github-pages/)
+
+

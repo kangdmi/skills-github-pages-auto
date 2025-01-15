@@ -1,7 +1,8 @@
 ---
 # Welcome to my blog
 ---
-<center>## Welcome to my Blog</center>
+<img src=https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png alt=celebrate width=150 align=center>
+## Welcome to my Blog
 I am doing Introduction to DevSecOps course to learn about DevSecOps.
 
 This is my assignment to build multipage web site on github.
