@@ -1,7 +1,7 @@
 ---
 # Welcome to my blog
 ---
-<img src=https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png alt=celebrate width=150 align=center>
+
 ## Welcome to my Blog
 I am doing Introduction to DevSecOps course to learn about DevSecOps.
 
@@ -16,3 +16,6 @@ Following pages added for practise
 [Benefits](Page3.md)
 
 [Best Practices](Page5.md)
+
+
+<img src=https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png alt=celebrate width=150 align=left>
