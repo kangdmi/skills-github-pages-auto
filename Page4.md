@@ -1,3 +1,0 @@
-## DevSecOps Phases
-
-
