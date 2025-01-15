@@ -1,5 +1,6 @@
+---
 ## DevSecOps Best Practices
-
+---
 DevSecOps is as much about culture change as process and tools. Here are some best practices to help make adopting this framework as smooth as possible.
 
 1. Shift the culture
