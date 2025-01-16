@@ -1,6 +1,6 @@
 
 ## DevSecOps
-
+<img src="https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png" alt="DevSecOps" width="300" height="200">
 
 DevSecOps is a framework that integrates security into the software development process. It stands for development, security, and operations.
 In susequent pages more details is provided.
