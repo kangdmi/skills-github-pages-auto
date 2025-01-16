@@ -16,7 +16,8 @@ Following pages added for practise
 [Benefits](Page3.md)
 
 [Best Practices](Page5.md)
-
+<!---
 ![Logo](logoDevSecOps.png)
-<img src="https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png" alt="Sample Image" width="400" height="100">
+-->
+
 
