@@ -1,6 +1,6 @@
 ## my training Resource
 
-I found this traing on 
+I found this training on 
 
 [Coursera](https://www.coursera.org/)
 
