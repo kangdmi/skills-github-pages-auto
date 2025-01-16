@@ -18,4 +18,5 @@ Following pages added for practise
 [Best Practices](Page5.md)
 
 ![Logo](logoDevSecOps.png)
-<img src=https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png alt=celebrate width=150 align=left>
+<img src=https://kangdmi.github.io/skills-github-pages/logoDevSecOps.png>
+<img src=https://octodex.github.com/images/constructocat2.jpg alt=celebrate width=300 align=right>
