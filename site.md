@@ -12,3 +12,7 @@ Yes, slate theme. While the site theme is based on Minima, it has been customize
 Does the site have the minimum number of pages and posts?
 
 Yes. There are five pages including the home page.
+
+# <a href="https://www.coursera.org/learn/introduction-to-devsecops/peer/UiuSv/building-a-website/review/NRA_XtjXEe-roQr_xDOGPw)">Review my assignment here</a>
+
+Thank you
