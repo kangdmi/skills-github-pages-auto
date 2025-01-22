@@ -16,7 +16,7 @@ Yes. There are five pages including the home page.
 
 My site
 
-https://kangdmi.github.io/skills-github-pages/
+[Link to my site](https://kangdmi.github.io/skills-github-pages/)
 
 Please review it below
 
