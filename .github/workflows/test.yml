@@ -2,8 +2,8 @@
 # git checkout my-pages
 
 # 2. Commit your changes
-git add . 
-git commit -m "Your commit message"
+# git add . 
+git commit -m "Message"
 
 # 3. Switch to the main branch
 git checkout main
