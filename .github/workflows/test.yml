@@ -1,2 +1,4 @@
-git checkout main
+git checkout main 
 git merge my-pages
+# Resolve any conflicts if necessary
+git push origin main 
