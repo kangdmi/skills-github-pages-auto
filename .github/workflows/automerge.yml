@@ -31,7 +31,7 @@ jobs:
         git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
         cd tmp
         git config user.name "Automerge Bot"
-        git config user.email "bot@example.com"
+        git config user.email "vakang@hotmail.com"
         git config pull.rebase false
         git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}}
         git push
