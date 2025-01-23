@@ -25,3 +25,5 @@ Following pages added for practise
   [My Training Resource](Page6.md)
 
 [Review my site](site.md)
+
+Test my site workflow: display if it works
