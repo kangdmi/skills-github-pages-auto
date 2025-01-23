@@ -1,8 +1,9 @@
-            - name: Up merge
+ name: Up merge
   # You may pin to the exact commit or the version.
   # uses: bambamboole/gha-upmerge@de87b212278009f9ace0ba024701890b9eb3281b
   uses: bambamboole/gha-upmerge@v1.0.1
   with:
+  on: [push, commit changes]
     # Name of the branch to merge from
     from_branch: my-pages
     # Name of the branch to merge to
