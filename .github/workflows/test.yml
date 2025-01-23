@@ -1,15 +1,17 @@
-# 1. Make sure you are on your branch
-# git checkout my-pages
-
-# 2. Commit your changes
-# git add . 
-# git commit -m "Message"
-
-# 3. Switch to the main branch
-# git checkout main
-
-# 4. Pull the latest changes from the remote main branch
-# git pull origin main
-
-# 5. Merge your branch into main
-git merge my-pages
+ name: Up merge
+  # You may pin to the exact commit or the version.
+  # uses: bambamboole/gha-upmerge@de87b212278009f9ace0ba024701890b9eb3281b
+  uses: bambamboole/gha-upmerge@v1.0.1
+  with:
+  on: [push, commit changes]
+    # Name of the branch to merge from
+    from_branch: my-pages
+    # Name of the branch to merge to
+    to_branch: main
+    # User name for git commits
+    user_name: GitHub Upmerge Action
+    # User email for git commits
+    user_email: vakang@hotmail.com
+    # Environment variable containing the token to use for push
+    push_token: # optional, default is GITHUB_TOKEN
+          
