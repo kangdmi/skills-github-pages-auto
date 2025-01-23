@@ -1,5 +1,5 @@
 # 1. Make sure you are on your branch
-git checkout my-pages
+# git checkout my-pages
 
 # 2. Commit your changes
 git add . 
