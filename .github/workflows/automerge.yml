@@ -8,11 +8,12 @@ name: Automerge
 
 on:
   # push:
-   pull_request:
+    push:
     branches:
     - my-pages
     
-   push:
+
+     pull_request:
     branches:
     - main
 
