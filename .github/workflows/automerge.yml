@@ -12,7 +12,7 @@ on:
     - my-pages
   pull_request:
     branches:
-    - my-pages
+    - main
 
 
 
