@@ -6,17 +6,11 @@ on:
     # You can setup schedule here
     # - cron: '0 0 * * *'
 
-on:
-  # push:
-   pull_request:
+
+  push:  
     branches:
     - my-pages
-    
-   push:
-    branches:
-    - main
-
-
+  
 
 env:
   # replace "github_username" with your GitHub username
