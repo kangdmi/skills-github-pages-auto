@@ -1,21 +1,22 @@
 name: Automerge
 
 # on:
-  # workflow_dispatch:
+  workflow_dispatch:
   # schedule:
     # You can setup schedule here
     # - cron: '0 0 * * *'
 
 on:
-  push:
+  # push:
+   pull_request:
     branches:
     - my-pages
-  pull_request:
+    
+   push:
     branches:
     - main
 
- # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+
 
 env:
   # replace "github_username" with your GitHub username
