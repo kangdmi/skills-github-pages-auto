@@ -1,6 +1,6 @@
 name: Automerge
 
-# on:
+on:
   workflow_dispatch:
   # schedule:
     # You can setup schedule here
