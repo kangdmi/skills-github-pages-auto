@@ -1,22 +1,12 @@
 name: Automerge
-
-# on:
-workflow_dispatch:
-  # schedule:
-    # You can setup schedule here
-    # - cron: '0 0 * * *'
-
-on:
-  # push:
-    push:
+workflow_dispatch: null
+'on':
+  push:
     branches:
-    - my-pages
-    
-
-     pull_request:
+      - my-pages
+  pull_request:
     branches:
-    - main
-
+      - main
   
 
 env:
