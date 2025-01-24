@@ -1,6 +1,8 @@
 name: Automerge
-workflow_dispatch: null
-'on':
+
+workflow_dispatch
+
+on:
   push:
     branches:
       - my-pages
