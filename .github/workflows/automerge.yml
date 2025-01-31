@@ -7,7 +7,7 @@ on:
       - my-pages
   pull_request:
     branches:
-      - main
+      - my-pages
   
 
 env:
