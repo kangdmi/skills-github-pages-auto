@@ -43,6 +43,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: pull_request_number,
-              merge_method: 'squash' # Or 'merge' or 'rebase'
+              merge_method: 'rebase' # Or 'merge' or 'squash'
             });
 
