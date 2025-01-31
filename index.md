@@ -26,4 +26,4 @@ Following pages added for practise
 
 [Review my site](site.md)
 
-testing workflow file : This text will diplay with workflow v 0.1
+testing workflow file : This text will diplay with workflow v 0.2
