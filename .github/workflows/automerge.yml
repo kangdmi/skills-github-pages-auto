@@ -7,14 +7,14 @@ on:
       - my-pages
   pull_request:
     branches:
-      - main
+      - my-pages
   
 
 env:
   # replace "github_username" with your GitHub username
   # replace "github.com/username/repo.git" with your GitHub repo path
   # do NOT replace ${{secrets.GITHUB_TOKEN}}, GitHub will take care of it
-  MY_REPO: https://github_kangdmi:${{secrets.GITHUB_TOKEN}}@github.com/kangdmi/skills-github-pages-auto.git
+  MY_REPO: https://github_kangdmi:${{secrets.GITHUB_TOKEN}}https://github.com/kangdmi/skills-github-pages-auto.git
 
   # replace "long-lived_branch_name" with your branch name
   MY_BRANCH: my-pages
