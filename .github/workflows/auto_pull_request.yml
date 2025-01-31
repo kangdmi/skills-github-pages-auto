@@ -1,54 +1,48 @@
-name: Auto Pull Request to Main
+name: Auto Merge on Pull Request
 
 on:
-  push:
-    branches-ignore:
-      - main  # Don't trigger on pushes to main
+  pull_request:
+    branches:
+      - main # Or your main branch name
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review # Optional: If you use "Ready for Review" feature
 
 jobs:
-  create_pull_request:
+  auto_merge:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.state == 'open' && github.event.pull_request.draft == false && github.event.pull_request.merged == false # Check if PR is open, not a draft, and not already merged
+    permissions:
+      pull-requests: write # Needed to merge the PR
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Git identity (Optional, but recommended)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Check if there are conflicts (Optional, but recommended)
+        run: |
+          if git status --porcelain | grep -q "^C"; then
+            echo "::error::Pull request has merge conflicts. Please resolve them."
+            exit 1
+          fi
+
+      - name: Merge pull request
+        uses: actions/github-script@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # Important: Use GITHUB_TOKEN for PR creation
-
-      - name: Create Pull Request
-        id: create_pr
-        uses: peter-murray/github-automatic-pull-request@v2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          source_branch: ${{ github.ref }} # Current branch that triggered the workflow
-          target_branch: main
-          title: 'Automated Pull Request' # Customize the title
-          body: |
-            Automated pull request from ${{ github.ref }} to main.
-
-            Changes from this branch are ready to be merged.  Please review.
-
-            * Add any specific details about the changes here *
-          base_ref: main #redundant but good practice to include
-          automatic_merge: false # Set to true to auto-merge (use with caution)
-          # Optional: Add labels to the PR
-          labels: |
-            automated
-            enhancement # or bug, feature, etc.
-          # Optional: Add assignees to the PR
-          assignees: |
-            your_github_username # Replace with your GitHub username
-            another_github_username
-          # Optional: Add reviewers to the PR
-          reviewers: |
-            your_github_username
-            another_github_username
-          # Optional: Set a milestone for the PR
-          milestone: 'Release v1.0' # Replace with your milestone name
-
-      - name: Output Pull Request Number
-        if: steps.create_pr.outputs.pull_request_number
-        run: echo "Pull Request Number: ${{ steps.create_pr.outputs.pull_request_number }}"
-
-      - name: Output Pull Request URL
-        if: steps.create_pr.outputs.pull_request_url
-        run: echo "Pull Request URL: ${{ steps.create_pr.outputs.pull_request_url }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pull_request_number = context.issue.number;
+            return github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: pull_request_number,
+              merge_method: 'squash' # Or 'merge' or 'rebase'
+            });
 
