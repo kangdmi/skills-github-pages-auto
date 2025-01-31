@@ -1,0 +1,54 @@
+name: Auto Pull Request to Main
+
+on:
+  push:
+    branches-ignore:
+      - main  # Don't trigger on pushes to main
+
+jobs:
+  create_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Important: Use GITHUB_TOKEN for PR creation
+
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-murray/github-automatic-pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          source_branch: ${{ github.ref }} # Current branch that triggered the workflow
+          target_branch: main
+          title: 'Automated Pull Request' # Customize the title
+          body: |
+            Automated pull request from ${{ github.ref }} to main.
+
+            Changes from this branch are ready to be merged.  Please review.
+
+            * Add any specific details about the changes here *
+          base_ref: main #redundant but good practice to include
+          automatic_merge: false # Set to true to auto-merge (use with caution)
+          # Optional: Add labels to the PR
+          labels: |
+            automated
+            enhancement # or bug, feature, etc.
+          # Optional: Add assignees to the PR
+          assignees: |
+            your_github_username # Replace with your GitHub username
+            another_github_username
+          # Optional: Add reviewers to the PR
+          reviewers: |
+            your_github_username
+            another_github_username
+          # Optional: Set a milestone for the PR
+          milestone: 'Release v1.0' # Replace with your milestone name
+
+      - name: Output Pull Request Number
+        if: steps.create_pr.outputs.pull_request_number
+        run: echo "Pull Request Number: ${{ steps.create_pr.outputs.pull_request_number }}"
+
+      - name: Output Pull Request URL
+        if: steps.create_pr.outputs.pull_request_url
+        run: echo "Pull Request URL: ${{ steps.create_pr.outputs.pull_request_url }}"
+
