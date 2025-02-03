@@ -3,7 +3,7 @@ name: Automerge my-pages to main
 on:
   pull_request:
     branches:
-      - main
+      - my-pages
     types: [closed]
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
         uses: actions/github-script@v6
         with:
           script: |
-            # const github = require('@actions/github');
+            const github = require('@actions/github');
             const core = require('@actions/core');
 
             const context = github.context;
