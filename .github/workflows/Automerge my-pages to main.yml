@@ -3,7 +3,7 @@ name: Automerge my-pages to main
 on:
   pull_request:
     branches:
-      - my-pages
+      - main
     types: [closed]
 
 jobs:
