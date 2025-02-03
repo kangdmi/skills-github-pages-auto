@@ -2,7 +2,7 @@ name: Automerge my-pages to main
 
 # on:
   # pull_request:
-    branches:
+    # branches:
       # - my-pages
     # types: [closed]
 
@@ -12,7 +12,7 @@ on:
       # - created
   push:
     branches:
-      - main
+      - my-pages
   # page_build:
 
 
