@@ -1,0 +1,44 @@
+name: Automerge
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - my-pages
+  pull_request:
+    branches:
+      - my-pages
+  
+
+env:
+  # replace "github_username" with your GitHub username
+  # replace "github.com/username/repo.git" with your GitHub repo path
+  # do NOT replace ${{secrets.GITHUB_TOKEN}}, GitHub will take care of it
+  MY_REPO: https://github_kangdmi:${{secrets.GITHUB_TOKEN}}https://github.com/kangdmi/skills-github-pages-auto.git
+  # MY_REPO: https://github.com/kangdmi/skills-github-pages-auto.git
+  
+  # replace "long-lived_branch_name" with your branch name
+  MY_BRANCH: my-pages
+
+  # replace it with the path to master repo
+  MASTER_REPO: https://github.com/kangdmi/skills-github-pages-auto.git
+
+  # replace "master" with your master branch name
+  MASTER_BRANCH: main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Merge with master
+      run: |
+        git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
+        cd tmp
+        # git config user.name "Automerge Bot"
+        git config user.name "kangdmi"
+        git config user.email "vakang@hotmail.com"
+        git config pull.rebase false
+        git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}}
+        git push
+
