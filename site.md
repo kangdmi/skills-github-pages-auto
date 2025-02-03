@@ -22,7 +22,9 @@ Please review it below
 
 [Review my site here](https://www.coursera.org/learn/introduction-to-devsecops/peer/UiuSv/building-a-website/review/NRA_XtjXEe-roQr_xDOGPw)
 
+This is to review apply devsecops
 
+[Workflow to merge-merge to main](https://github.com/kangdmi/skills-github-pages-auto/tree/main/.github/workflows)
 
 Thank you
 
