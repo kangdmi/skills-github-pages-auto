@@ -7,9 +7,9 @@ name: Automerge my-pages to main
     # types: [closed]
 
 on:
-  label:
-    types:
-      - created
+  # label:
+    # types:
+      # - created
   push:
     branches:
       - main
