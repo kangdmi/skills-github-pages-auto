@@ -24,7 +24,7 @@ Please review it below
 
 This is to review apply devsecops
 
-[Workflow to merge-merge to main](https://github.com/kangdmi/skills-github-pages-auto/tree/main/.github/workflows)
+[Workflow to merge -my page to main](https://github.com/kangdmi/skills-github-pages-auto/tree/main/.github/workflows)
 
 Thank you
 
