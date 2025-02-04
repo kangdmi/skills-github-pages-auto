@@ -1,3 +1,24 @@
+Assignment Number 2 
+
+Applying DevSecOps practices
+
+My workflow site and files
+
+[Workflow to merge -my page to main](https://github.com/kangdmi/skills-github-pages-auto/tree/main/.github/workflows)
+
+Review Page
+
+[Applying DevSecOps practices
+Review Page](https://www.coursera.org/learn/introduction-to-devsecops/peer/unE6B/applying-devsecops-practices/review/5z9A2-JeEe-VpA5Bl1jHbQ
+)
+
+
+***********************************************************************************
+
+
+
+Assignment Number 1
+
 What is the URL of your website?
 
 <a href="https://kangdmi.github.io/skills-github-pages/">https://kangdmi.github.io/skills-github-pages/</a>
@@ -21,10 +42,4 @@ My site
 Please review it below
 
 [Review my site here](https://www.coursera.org/learn/introduction-to-devsecops/peer/UiuSv/building-a-website/review/NRA_XtjXEe-roQr_xDOGPw)
-
-This is to review apply devsecops
-
-[Workflow to merge -my page to main](https://github.com/kangdmi/skills-github-pages-auto/tree/main/.github/workflows)
-
-Thank you
 
