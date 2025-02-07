@@ -3,10 +3,9 @@
 
 name: Automerge my-pages to main
 on:
-   push:
-    branches:    
-      - my-pages
-      
+  pull_request:
+    branches: main
+
  jobs:
   automerge:
     runs-on: ubuntu-latest
