@@ -1,22 +1,13 @@
+
+```javascript
+
 name: Automerge my-pages to main
-
-# on:
-  # pull_request:
-    # branches:
-      # - my-pages
-    # types: [closed]
-
 on:
-  # label:
-    # types:
-      # - created
-  push:
-    branches:
+   push:
+    branches:    
       - my-pages
-  # page_build:
-
-
-jobs:
+      
+ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
@@ -41,3 +32,4 @@ jobs:
               base: 'main',
               title: `Merge my-pages to main`,
             });
+```
